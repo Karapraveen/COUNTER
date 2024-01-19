@@ -1,0 +1,114 @@
+                          CONFORMAL (R)
+                   Version 17.20-s300 (10-Feb-2018) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2018. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 2061 days old. You can download the latest version from http://downloads.cadence.com.
+
+// Command: read library /home/vlsi6/Desktop/kumar_dicd/counter/equi_check/tsl18fs120_scl_ss.v -verilog -both
+// Parsing file /home/vlsi6/Desktop/kumar_dicd/counter/equi_check/tsl18fs120_scl_ss.v ...
+// Warning: (RTL14) Signal has input but it has no output (occurrence:30)
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:48)
+// Warning: (VLG5.5) Internal primitive is recognized (occurrence:120)
+// Warning: (VLG5.6) Named port association is ignored for primitive gate (occurrence:120)
+// Warning: (IGN4) Attribute instance(s) are ignored (occurrence:1)
+// Warning: (IGN7.1) trireg net is modeled as a latch to hold value (occurrence:1)
+// Warning: (HRC1.4) Module/entity is empty (blackboxed) (occurrence:2)
+// Note: (HRC3.5b) Open output port connection is detected (occurrence:73)
+// Warning: (HRC3.10a) An input port is declared, but it is not completely used in the module (occurrence:2)
+// Note: Read VERILOG library successfully
+// Command: read design /home/vlsi6/Desktop/kumar_dicd/counter/rtl/counter.v -verilog -golden
+// Parsing file /home/vlsi6/Desktop/kumar_dicd/counter/rtl/counter.v ...
+// Golden root module is set to 'counter'
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:1)
+// Note: Read VERILOG design successfully
+// Command: read design /home/vlsi6/Desktop/kumar_dicd/counter/synthesis/counter_netlist.v -verilog -revised
+// Parsing file /home/vlsi6/Desktop/kumar_dicd/counter/synthesis/counter_netlist.v ...
+// Revised root module is set to 'counter'
+// Note: Read VERILOG design successfully
+// Command: set system mode lec 
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            2      4      4         10      
+--------------------------------------------------------------------------------
+Revised           2      4      4         10      
+================================================================================
+// Command: add compare point -all
+// 8 compared points added to compare list
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           4      4         8       
+================================================================================
+// Command: gui show
+// Error: Unknown command gui show.
+// Command: set gui on
+// Switching to GUI mode
+//Note: Enable Unified Schematic Viewer usage.
+//Note: Enable buffer/inverter collapsing usage on schematics
+//Note: Enable bus collapsing usage on schematics
+//Note: Enable independent UI styles on each schematics
+//Note: Set schematic traverse max. level to 200 !!!
+//Note: Set schematic traverse max. time to 300(seconds) !!!
+//Note: Enable Schematic concise drawing support
+// Command: lec -xl -64 -nogui 
+// Error: Unknown command lec -xl -64 -nogui.
+// Command: -xl
+// Error: Unknown command -xl.
+// Command: set gui
+// Command: set gui on
+// Command: set system mode setup
+// Command: lec
+// Error: Unknown command lec.
+// Command: lec -64 -xl
+// Error: Unknown command lec -64 -xl.
+// Command: set system mode lec
+// Command: report statistics
+Mapping and compare statistics
+================================================================================
+                     Compare Result       Golden            Revised
+--------------------------------------------------------------------------------
+Root module name                          counter           counter           
+
+Primary inputs                                 2                  2
+   Mapped                                      2                  2
+
+Primary outputs                                4                  4
+   Mapped                                      4                  4
+      Equivalent                  4
+
+State key points                               4                  4
+   Mapped                                      4                  4
+      Equivalent                  4
+================================================================================
+// Command: report verification
+================================================================================
+                            Verification Report
+--------------------------------------------------------------------------------
+Category                                                                  Count
+--------------------------------------------------------------------------------
+1. Non-standard modeling options used:                                      0
+--------------------------------------------------------------------------------
+2. Incomplete verification:                                                 0
+--------------------------------------------------------------------------------
+3. User modification to design:                                             0
+--------------------------------------------------------------------------------
+4. Conformal Constraint Designer clock domain crossing checks recommended:  0
+--------------------------------------------------------------------------------
+5. Design ambiguity:                                                        0
+--------------------------------------------------------------------------------
+6. Compare Results:                                                        PASS
+================================================================================
