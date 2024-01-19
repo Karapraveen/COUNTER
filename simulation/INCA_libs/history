@@ -1,0 +1,11 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(20Sep2023:15:56:11):( irun counter.v counter_tb.v -access +rwc -coverage all -gui )
+s2::(20Sep2023:16:13:52):( irun counter.v counter_tb.v -access +rwc -coverage all -gui )
+s3::(20Sep2023:16:15:29):( irun counter.v counter_tb.v -access +rwc -coverage all -gui )
+s4::(20Sep2023:16:18:13):( irun counter.v counter_tb.v -access +rwc -coverage all -gui )
+s5::(20Sep2023:16:21:45):( irun counter.v counter_tb.v -access +rwc -coverage all -gui )
+s6::(20Sep2023:16:22:16):( irun counter.v counter_tb.v -access +rwc -coverage all -gui )
+s7::(20Sep2023:16:30:00):( irun counter.v counter_tb.v -access +rwc -coverage all -gui )

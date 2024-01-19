@@ -1,0 +1,43 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Sep 20, 2023 at 16:30:00 IST
+irun
+	counter.v
+	counter_tb.v
+	-access +rwc
+	-coverage all
+	-gui
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /cad/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 1060 NS + 0
+./counter_tb.v:13 	  #1000 $finish;
+ncsim> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  counter_tb(counter_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_5658ade3_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_5658ade3_00000000.ucd
+
+Launching IMC...
+
+ncsim> ^C
+ncsim> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  counter_tb(counter_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_5658ade3_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_5658ade3_00000000.ucd
+TOOL:	irun(64)	15.20-s051: Exiting on Sep 20, 2023 at 16:32:21 IST  (total: 00:02:21)
